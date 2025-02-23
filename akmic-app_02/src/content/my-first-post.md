@@ -21,6 +21,6 @@ image: images/ai_girl_01.jpg
 
 [リンクの例](https://google.com)
 
-![画像の説明](/akmic-app_02/public/images/ai_girl_01.jpg)
+<!-- ![画像の説明](/akmic-app_02/public/images/ai_girl_01.jpg) -->
 
-![画像の説明](http://localhost:3000/ai_girl_01.jpg)
+![画像の説明](images/ai_girl_01.jpg)
