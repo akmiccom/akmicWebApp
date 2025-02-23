@@ -1,5 +1,11 @@
 # akmicWebApp
 
+## 参考サイト
+
+https://reffect.co.jp/react/nextjs-markdown-blog#i
+
+## 構築
+
 https://chatgpt.com/c/67b2e3b2-9bd8-8003-ad28-1b4f0b8710ee
 
 akmic の WebApp を、しっかりプログラミングを学びつつ実践できる構成を考えて構成します。
