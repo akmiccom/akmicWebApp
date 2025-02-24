@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { getPostBySlug, getAllPosts } from "@/lib/posts";
+// import { MarkdownRenderer } from "@/components/MarkdownRenderer";
 
 
 export default async function BlogPost({ params }) {
@@ -13,9 +14,9 @@ export default async function BlogPost({ params }) {
         height={300}
         alt={post.title}
       />
-      {/* <h1 className="text-3xl font-bold">{post.title}</h1> */}
-      {/* <p className="text-gray-500">{post.date}</p> */}
-      <div className="prose dark:prose-invert m-5 bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-5xl" dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+      <div className="prose dark:prose-invert m-5 bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-4xl"
+      dangerouslySetInnerHTML={{ __html: post.contentHtml }} />      
+      {/* <MarkdownRenderer contentHtml={post.contentHtml} /> */}
     </main>
   );
 }
