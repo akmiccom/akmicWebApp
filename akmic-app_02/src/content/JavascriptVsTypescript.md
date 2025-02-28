@@ -1,8 +1,11 @@
 ---
+category: "CATEGORY"
 title: "JavaScript と TypeScript の違い"
 date: "2025-02-23"
 description: "JavaScript と TypeScript の違いについてまとめたものです。"
-image: images/ai_girl_02.jpg
+image: images/summer.webp
+aaa: "1.2K"
+bbb: "6"
 ---
 
 # JavaScript と TypeScript の違い
@@ -144,3 +147,5 @@ console.log(person.greet()); // "Hello, my name is Alice"
 - **JavaScript の知識があると TypeScript への移行がスムーズ**
 
 **📌 TypeScript を導入することで、エラーを事前に防ぎ、開発効率を向上させることができる！**
+
+![summer.webp](/images/summer.webp)

@@ -2,7 +2,9 @@
 title: "Next.js"
 date: "2025-02-23"
 description: "これは、markdown のテストです。"
-image: images/ai_girl_03.jpg
+image: images/winter.webp
+aaa: "1.2K"
+bbb: "6"
 ---
 
 # Next.js

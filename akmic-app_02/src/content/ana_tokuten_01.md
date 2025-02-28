@@ -1,8 +1,11 @@
 ---
+category: "CATEGORY"
 title: "提携航空会社特典航空券の利用条件とは？"
 date: "2025-02-24"
-description: "ANAの提携航空会社特典航空券の利用条件についてわかりやすく解説します"
 image: images/ana_tokuten_01_1920_1080.webp
+aaa: "1.2K"
+bbb: "6"
+description: "ANAの提携航空会社特典航空券の利用条件についてわかりやすく解説します"
 ---
 
 # ANAマイレージクラブの提携航空会社特典航空券の利用条件とは？
