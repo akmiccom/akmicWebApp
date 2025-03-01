@@ -12,12 +12,12 @@ export default function Header() {
         </svg>
         <span className="ml-3 text-xl">akmicCom</span>
       </Link>
-      <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+      <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center justify-center text-base text-gray-400">
         <ul className="flex">
           <li><Link href="/" className="mr-5 hover:text-white">Home</Link></li>
-          <li><Link href="/about" className="mr-5 hover:text-white">About</Link></li>
           <li><Link href="/blog" className="mr-5 hover:text-white">Blog</Link></li>
           <li><Link href="/tailblocks" className="mr-5 hover:text-white">Tailblocks</Link></li>
+          <li><Link href="/about" className="mr-5 hover:text-white">About Us</Link></li>
           <li><Link href="/contact" className="mr-5 hover:text-white">Contact</Link></li>
         </ul>
       </nav>

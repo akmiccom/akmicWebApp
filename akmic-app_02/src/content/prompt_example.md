@@ -2,7 +2,7 @@
 category: "PRONPT"
 title: "画像生成のためのプロンプト"
 date: "2025-03-01"
-image: images/spring.webp
+image: images/A_Japanese_young_woman_jan.webp
 aaa: "1.0K"
 bbb: "3"
 description: "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat."

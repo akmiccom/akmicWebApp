@@ -2,15 +2,33 @@ import Image from "next/image";
 import { getPostBySlug, getAllPosts } from "@lib/posts";
 import { MarkdownRenderer } from "@components/MarkdownRenderer";
 
-export default async function BlogPost({ params }) {
-  const post = await getPostBySlug(params.slug);
+interface BlogPostProps {
+  params: {
+    slug: string;
+  };
+}
+
+interface Post {
+  image?: string;
+  title?: string;
+  created: string;
+  updated: string;
+  contentHtml: string;
+}
+
+export default async function BlogPost({ params }: BlogPostProps) {
+  const post: Post = await getPostBySlug(params.slug);
 
   return (
     <main className="flex flex-col items-center bg-gray-100 dark:bg-gray-900 p-6">
+      <ol className="">
+        <li>{post.created}</li>
+        <li>{post.updated}</li>
+      </ol>
       <Image
         src={post.image ? `/${post.image}` : "/images/default.jpg"}
-        width={1000}
-        height={1080}
+        width={1920 / 2}
+        height={1080 / 2}
         alt={post.title || "No Image"}
         className="rounded-lg shadow-md"
       />

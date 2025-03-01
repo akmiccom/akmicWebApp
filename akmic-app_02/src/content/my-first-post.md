@@ -1,6 +1,5 @@
 ---
 category: "CATEGORY"
-title: "My First Blog Post"
 date: "2025-02-22"
 description: "これは、markdown のテストです。"
 image: images/ai_girl_01.jpg
@@ -8,7 +7,7 @@ aaa: "1.2K"
 bbb: "6"
 ---
 
-# 大見出し（h1）
+# My First Blog Post
 
 これは **Markdown** の見出しです。
 
