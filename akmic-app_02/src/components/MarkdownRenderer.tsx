@@ -17,7 +17,7 @@ export function MarkdownRenderer({ contentHtml }: { contentHtml: string }) {
           if (domNode.type === "tag" && domNode.name === "img") {
             const { src, alt } = domNode.attribs;
             return (
-              <div className="flex justify-center">
+              <span className="flex justify-center">
                 <Image
                   src={src}
                   alt={alt}
@@ -27,7 +27,7 @@ export function MarkdownRenderer({ contentHtml }: { contentHtml: string }) {
                   className="rounded-lg shadow-md"
                   layout="intrinsic"
                 />
-              </div>
+              </span>
             );
           }
         },

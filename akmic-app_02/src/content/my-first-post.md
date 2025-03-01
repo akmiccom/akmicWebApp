@@ -26,4 +26,4 @@ bbb: "6"
 
 <!-- ![画像の説明](/akmic-app_02/public/images/ai_girl_01.jpg) -->
 
-![画像の説明](images/ai_girl_01.jpg)
+![画像の説明](/images/ai_girl_01.jpg)
