@@ -1,37 +1,37 @@
-// import Image from 'next/image';
-
-// // Markdown 内の <img> を Next.js の <Image> に変換
-// interface MarkdownRendererProps {
-//   contentHtml: string;
-// }
-
-// export function MarkdownRenderer({ contentHtml }: MarkdownRendererProps) {
-//   return (
-//     <div
-//       className="prose mt-4"
-//       dangerouslySetInnerHTML={{
-//         __html: contentHtml.replace(/<img src="([^"]+)" alt="([^"]+)" \/>/g, (_, src, alt) => {
-//           return `<Image src="${src}" alt="${alt}" width="300" height="300" layout="responsive" />`;
-//         }),
-//       }}
-//     />
-//   );
-// }
-
-
+import React from "react";
 import Image from "next/image";
+import parse from "html-react-parser";
 
-// Markdown 内の <img> を Next.js の <Image> に変換
-export function MarkdownRenderer({ contentHtml }) {
+// Markdown 内の `<img>` を Next.js の `<Image>` に変換
+export function MarkdownRenderer({ contentHtml }: { contentHtml: string }) {
+  const transformedHtml = contentHtml.replace(
+    /<img src="([^"]+)" alt="([^"]+)" \/>/g,
+    (_, src, alt) =>
+      `<span class="next-image"><img data-src="${src}" alt="${alt}" /></span>`
+  );
+
   return (
-    <div
-      className="prose mt-4"
-      dangerouslySetInnerHTML={{
-        __html: contentHtml.replace(
-          /<img src="([^"]+)" alt="([^"]+)" \/>/g,
-          `<Image src="$1" alt="$2" width="600" height="400" layout="responsive" />`
-        ),
-      }}
-    />
+    <section className="prose dark:prose-invert m-5 p-5 w-full max-w-5xl">
+      {parse(transformedHtml, {
+        replace: (domNode) => {
+          if (domNode.type === "tag" && domNode.name === "img") {
+            const { src, alt } = domNode.attribs;
+            return (
+              <div className="flex justify-center">
+                <Image
+                  src={src}
+                  alt={alt}
+                  width={576}
+                  height={324}
+                  // layout="responsive"
+                  className="rounded-lg shadow-md"
+                  layout="intrinsic"
+                />
+              </div>
+            );
+          }
+        },
+      })}
+    </section>
   );
 }

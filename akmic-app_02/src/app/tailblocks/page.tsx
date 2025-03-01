@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Tailblocks() {
   return (
-    <section className="text-gray-400 bg-gray-900">
+    <section className="min-h-screen text-gray-400 bg-gray-900">
     <div className="container px-5 py-24 mx-auto">
       <div className="flex flex-wrap">
       <div className="p-4 md:w-1/3">
