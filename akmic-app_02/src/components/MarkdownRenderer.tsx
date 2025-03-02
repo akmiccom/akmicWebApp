@@ -1,6 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import parse from "html-react-parser";
+import parse, { domToReact } from "html-react-parser";
+
+// `MarkdownRenderer` の型定義
+// interface MarkdownRendererProps {
+//   contentHtml: string;
+// }
 
 // Markdown 内の `<img>` を Next.js の `<Image>` に変換
 export function MarkdownRenderer({ contentHtml }: { contentHtml: string }) {
@@ -28,6 +33,20 @@ export function MarkdownRenderer({ contentHtml }: { contentHtml: string }) {
                   layout="intrinsic"
                 />
               </span>
+            );
+          }
+          // ✅ `h1`, `h2`, `h3` に `id` を付与して目次と連携
+          if (
+            domNode.type === "tag" &&
+            ["h1", "h2", "h3"].includes(domNode.name)
+          ) {
+            const id =
+              domNode.children[0]?.data?.toLowerCase().replace(/\s+/g, "-") ||
+              "";
+            return React.createElement(
+              domNode.name,
+              { id, className: "scroll-mt-20" },
+              domToReact(domNode.children)
             );
           }
         },

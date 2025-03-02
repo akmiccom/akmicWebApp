@@ -19,6 +19,7 @@ export default function Header() {
           <li><Link href="/tailblocks" className="mr-5 hover:text-white">Tailblocks</Link></li>
           <li><Link href="/about" className="mr-5 hover:text-white">About Us</Link></li>
           <li><Link href="/contact" className="mr-5 hover:text-white">Contact</Link></li>
+          <li><Link href="/pageNotFound" className="mr-5 hover:text-white">PageNotFound.</Link></li>
         </ul>
       </nav>
       <button className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Button
