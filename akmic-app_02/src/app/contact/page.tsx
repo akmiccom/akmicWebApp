@@ -30,14 +30,18 @@ export default function Contact() {
         <div>
           <p>table タグと tr タグを使っています。</p>
           <table>
-            <tr>
-              <th>名前 thタグです。</th>
-              <th>年齢 thタグです。</th>
-            </tr>
-            <tr>
-              <td>田中 tdタグです。</td>
-              <td>25歳 tdタグです。</td>
-            </tr>
+            <thead>
+              <tr>
+                <th>名前 thタグです。</th>
+                <th>年齢 thタグです。</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>田中 tdタグです。</td>
+                <td>25歳 tdタグです。</td>
+              </tr>
+            </tbody>
           </table>
         </div>
 
