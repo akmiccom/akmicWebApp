@@ -1,14 +1,14 @@
 import Link from "next/link";
 
-
 export default function Home() {
   return (
-    <div className="text-gray-100 bg-gray-900 grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <h1 className="title-font text-6xl font-medium text-white mb-3">
+    <main className="grid min-h-screen place-items-center bg-gray-900 px-6 py-24 sm:py-32 lg:px-8">
+      <div className="text-center">
+        <p className="text-base font-semibold text-indigo-600">200</p>
+        <h1 className="mt-4 text-5xl font-semibold tracking-tight text-balance text-gray-200 sm:text-7xl">
           akmicCom.
         </h1>
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+        <ol className="list-inside list-decimal text-center sm:text-left font-[family-name:var(--font-geist-mono)] mt-6 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
           <li className="mb-2">
             This is our website.{" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
@@ -24,13 +24,18 @@ export default function Home() {
           </li>
           <li>I hope this will be of help to you.</li>
         </ol>
-        <Link
-          className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-          href="/blog"
-        >
-          Read our Blog
-        </Link>
+        <div className="mt-10 flex items-center justify-center gap-x-6">
+          <Link
+            href="/blog"
+            className="rounded-xl bg-indigo-600 px-5 py-3 text-sm font-semibold text-gray-100 shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          >
+            Read our Blog
+          </Link>
+          <a href="#" className="text-sm font-semibold text-gray-500">
+            Contact Us <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
       </div>
-    </div>
+    </main>
   );
 }

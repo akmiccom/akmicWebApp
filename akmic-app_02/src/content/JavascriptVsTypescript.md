@@ -1,8 +1,7 @@
 ---
 category: "CATEGORY"
-title: "JavaScript と TypeScript の違い"
+title: "JavaScriptとTypeScript の違い"
 date: "2025-02-23"
-description: "JavaScript と TypeScript の違いについてまとめたものです。"
 image: images/summer.webp
 aaa: "1.2K"
 bbb: "6"
@@ -10,7 +9,9 @@ bbb: "6"
 
 # JavaScript と TypeScript の違い
 
-## 1. **基本の違い**
+今回は、JavaScript と TypeScript の違いについてまとめてみました。同じようでちょっと違う部分も多くあります。
+
+## 基本の違い
 | 項目         | JavaScript | TypeScript |
 |-------------|------------|------------|
 | **型定義** | なし | あり（静的型付け） |
@@ -22,8 +23,8 @@ bbb: "6"
 
 ---
 
-## 2. **サンプルコードの比較**
-### **JavaScript**
+## サンプルコードの比較
+### JavaScript のサンプルコード
 ```javascript
 function add(a, b) {
   return a + b;
@@ -32,7 +33,7 @@ function add(a, b) {
 console.log(add(5, "10")); // "510"（文字列として結合される）
 ```
 
-### **TypeScript**
+### TypeScript のサンプルコード
 ```typescript
 function add(a: number, b: number): number {
   return a + b;
@@ -44,8 +45,8 @@ console.log(add(5, "10")); // コンパイルエラー（型が一致しない�
 
 ---
 
-## 3. **インターフェースの使用**
-### **JavaScript**
+## インターフェースの使用
+### JavaScript のインターフェース
 ```javascript
 const user = {
   name: "John",
@@ -60,7 +61,7 @@ console.log(greet(user)); // "Hello, John"
 ```
 🔴 **関数の引数 `user` にどんなオブジェクトでも渡せてしまう。**
 
-### **TypeScript**
+### TypeScript のインターフェース
 ```typescript
 interface User {
   name: string;
@@ -82,8 +83,8 @@ console.log(greet(user)); // "Hello, John"
 
 ---
 
-## 4. **クラスの利用**
-### **JavaScript**
+## クラスの利用
+### JavaScript のクラス
 ```javascript
 class Person {
   constructor(name) {
@@ -99,7 +100,7 @@ const person = new Person("Alice");
 console.log(person.greet()); // "Hello, my name is Alice"
 ```
 
-### **TypeScript**
+### TypeScript のクラス
 ```typescript
 class Person {
   private name: string;
@@ -120,7 +121,7 @@ console.log(person.greet()); // "Hello, my name is Alice"
 
 ---
 
-## 5. **開発環境での違い**
+## 開発環境での違い
 | 項目 | JavaScript | TypeScript |
 |------|------------|------------|
 | **エディタの補完** | 限定的 | 型情報に基づいて強力な補完 |
@@ -130,7 +131,7 @@ console.log(person.greet()); // "Hello, my name is Alice"
 
 ---
 
-## 6. **どちらを選ぶべきか？**
+## どちらを選ぶべきか？
 | 開発規模 | 選択推奨 |
 |---------|------------|
 | 小規模プロジェクト・スクリプト | **JavaScript** |
@@ -141,7 +142,7 @@ console.log(person.greet()); // "Hello, my name is Alice"
 
 ---
 
-## 🎯 **結論**
+## 結論
 - **型の安全性や保守性が求められる場合は TypeScript を選ぶ**
 - **短期間で動作するものを作る場合は JavaScript を使う**
 - **JavaScript の知識があると TypeScript への移行がスムーズ**
