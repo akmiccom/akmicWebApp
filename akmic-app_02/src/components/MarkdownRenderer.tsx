@@ -49,6 +49,20 @@ export function MarkdownRenderer({ contentHtml }: { contentHtml: string }) {
               domToReact(domNode.children)
             );
           }
+           // ✅ リンク (`<a>`) を別タブ (`target="_blank"`) で開くように修正
+           if (domNode.type === "tag" && domNode.name === "a") {
+            const { href } = domNode.attribs;
+            return (
+              <a
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:underline"
+              >
+                {domToReact(domNode.children)}
+              </a>
+            );
+          }
         },
       })}
     </section>

@@ -61,7 +61,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
             </li>
           ))}
         </ul>
-          <Link href="/blog" className="text-gray-300 hover:underline">Go back Blog</Link>
+          <Link href="/blog" className="text-gray-300 hover:underline">Go back Blog List</Link>
       </aside>
     </main>
   );
