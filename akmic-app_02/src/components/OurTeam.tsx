@@ -6,19 +6,25 @@ const teamMembers = [
     role: "データサイエンティスト & 旅行プランナー",
     image: "/images/A_Japanese_young_woman_jun.webp",
     commnt: "Hello!",
-},
-{
+    },
+    {
     name: "John Doe",
     role: "Webデベロッパー & UIデザイナー",
     image: "/images/A_Japanese_young_woman_mar.webp",
     commnt: "こんにちは！",
-},
-{
+    },
+    {
     name: "Jane Smith",
     role: "マーケティングスペシャリスト",
     image: "/images/A_Japanese_mysterious_woman_oct.webp",
     commnt: "アニョハセヨ",
-  },
+    },
+    {
+    name: "Aoba",
+    role: "マーケティングスペシャリスト",
+    image: "/images/A_Japanese_woman_may.webp",
+    commnt: "アニョハセヨ",
+    },
 ];
 
 export default function OurTeam() {
