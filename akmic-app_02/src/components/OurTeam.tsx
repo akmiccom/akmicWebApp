@@ -29,11 +29,11 @@ const teamMembers = [
 
 export default function OurTeam() {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-16">
+    <div id="ourteam" className="max-w-7xl mx-auto px-6 py-16">
       <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center">
         私たちのチーム
       </h2>
-      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="mt-10 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {teamMembers.map((member, index) => (
           <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md text-center">
             <Image src={member.image} alt={member.name} width={300} height={100}

@@ -11,13 +11,20 @@ const missions = [
     misson: "ユーザーファースト",
     detail: "旅好きなあなたのために、最高の体験を。",
   },
+  {
+    misson: "文化交流の促進",
+    detail: "世界中の人々とつながり、異文化体験を楽しむ。",
+  },
 ];
 
 
 export default function OurMission() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-16">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center">
+        私たちのミッション
+      </h2>
+      <div className="mt-10 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {missions.map((mission, index) => (
           <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">

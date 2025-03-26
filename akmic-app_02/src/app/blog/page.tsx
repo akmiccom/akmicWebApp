@@ -21,7 +21,7 @@ export default function BlogListPage() {
     <section className="min-h-screen text-gray-400 bg-gray-900">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap justify-center">
-          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+          <ul className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
             {posts.map((post) => (
               <li key={post.slug} className="p-4">
                 <div className="h-full border-2 border-gray-800 rounded-lg overflow-hidden">

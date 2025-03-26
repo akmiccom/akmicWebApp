@@ -15,7 +15,7 @@ const stories = [
 
 export default function OurStory() {
   return (
-    <div className="max-w-5xl mx-auto px-6 py-16">
+    <div id="ourstory" className="max-w-5xl mx-auto px-6 py-16">
       <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center">
         私たちのストーリー
       </h2>
