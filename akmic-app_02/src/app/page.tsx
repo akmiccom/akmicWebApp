@@ -23,6 +23,12 @@ export default function Home() {
             </code> */}
           </li>
           <li>そして私たちは、新しい旅の楽しみを提案します</li>
+          <li>あなたはどんなことを考ええるが好きですか？</li>
+          <li>いつの間にかよく考えていることはどんなことですか？</li>
+          <li>あなたが本当に大切に思っていることはどんなことですか？</li>
+          <li>あなたにとって最も重要なことは？</li>
+          <li>何をしているときが一番楽しい？</li>
+          <li>これだけは耐えられないと思うことは？</li>
         </ol>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <Link
